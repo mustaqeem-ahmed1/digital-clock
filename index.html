@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<!-- it will execute only once, so have to keep calling it so that it can show the changes every seconds.-->
+<body onload="setInterval(() => {
+    digitalClock()
+}, 1000);">
+
+    <p>Digital clock</p>
+    <div class="container1">
+       <div class="time">
+            <span>HH</span> :  
+            <span>MM</span>: 
+            <span>SS</span>
+       </div>
+       
+       <div class="date">
+            <span>DD</span>  : 
+            <span>MM</span> : 
+            <span>YYYY</span>
+       </div>
+        
+       <div class="day">
+            <span>Day</span>
+        </div>
+
+    </div>
+
+    <div class="container2">
+        <div>
+            <span></span>
+        </div>
+        <div>
+            <span></span>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
